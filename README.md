@@ -10,13 +10,14 @@ This two-part introductory workshop was offered through the [Robert Gillespie Ac
 Ever wanted to delve into Python for your work, but found that whichever material you tried using focused too much on a specific form of data analysis? Heard of Python packages and extensions that are supposed to apply to your work, but not sure how to put them into practice? This two-part workshop aims to give a general, field-agnostic overview of Python to get you familiar with what you need to get started with writing Python code for the specific needs of your research. The workshop will cover introductory Python from the ground up before delving into object-oriented programming and how field-specific Python packages take advantage of it to create all sorts of powerful tools. In the second half, we will go over making a basic custom Python object and use it break down how exactly these tools are created. With this workshop, we aim to give learners the foundational knowledge needed to take their Python journey in whichever direction they choose. 
 
 **Workshop 1 (1.5 - 2 hrs):**
-- 15 min - introduction to the Python interpreter and the Jupyter environment
-- 30 min - brief introduction on the general concept of the Python interpreter, Python object types
-- 15 min - for loops and if/else statements
-- 30 min - reading from + writing to files in Python
+- Introduction to the Python interpreter and the Jupyter environment
+- Python object types (e.g., numeric, float, string, etc.)
+- Iteration (e.g., for loops) and conditional statements (e.g., if/else)
 
-**Workshop 2 (1.5 -2 hrs):**
-- 15 min - review from previous workshop
-- 1 hr 15 min - building a sample custom object class called fileparser that expands on the file reading/writing operations we learned earlier
+
+**Workshop 2 (1.5 - 2 hrs):**
+- Review from previous workshop
+- Reading from + writing to files in Python
+- Building a sample custom class called `fileparser` that expands on the file reading/writing operations we learned earlier
 
 
