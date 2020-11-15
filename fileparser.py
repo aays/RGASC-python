@@ -1,29 +1,22 @@
-'''
-fileparser.py - contains basic functions to perform file operations
-'''
-
-class fo:
+class fp:
     def __init__(self, fname):
         self.fname = fname
         self.fname_length = len(fname)
-        self.fname_extension = self.get_extension(fname)
-    
-    def get_extension(self, fname):
-        # use this to introduce methods and attributes
-        i = fname.rfind('.')
-        extension = fname[i+1:]
+        self.extension = self._get_extension()
+        
+    def convert_to_list(self):
+        fname_lines = []
+        with open(self.fname, 'r') as f:
+            for line in f:
+                fname_lines.append(line.rstrip('\n'))
+        return fname_lines
+
+    def _get_extension(self):
+        i = self.fname.rfind('.')
+        extension = self.fname[i:]
         return extension
     
-    def convert_to_list(self):
-        lines = []
-        with open(self.fname) as f:
-            for line in f:
-                lines.append(line.rstrip('\n'))
-        return lines
+def package_name():
+    print('fileparser!')
     
-    def convert_to_dict(self):
-        dict_out = {}
-        with open(self.fname) as f:
-            for i, line in enumerate(f):
-                dict_out[i] = line.rstrip('\n')
-        return dict_out
+euler = 2.71828
